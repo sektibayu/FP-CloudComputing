@@ -1,7 +1,7 @@
 <?php
+	session_start();
 	if(!(isset($_SESSION['nrp']) && isset($_SESSION['nama']))) header("location: ../../");
 	include "../../database/connect.php";
-	session_start();
 	echo "NRP: ".$_SESSION['nrp']."<br>";
 	echo "Nama: ".$_SESSION['nama']."<br>";
 
